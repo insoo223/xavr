@@ -23,7 +23,7 @@ int main(void) {
 	while (1) {
         // set i < 5 for blinking like every third sec
         // set i < 20 for blinking like every sec
-        for(char i = 0; i < 5; i++){
+        for(char i = 0; i < 20; i++){
             _delay_ms(30);  /* max is 262.14 ms / F_CPU in MHz */
         }
         //PORTB ^=(1 << PORTB5);    /* toggle the LED */

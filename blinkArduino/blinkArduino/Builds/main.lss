@@ -85,7 +85,7 @@ int main(void) {
 	while (1) {
         // set i < 5 for blinking like every third sec
         // set i < 20 for blinking like every sec
-        for(char i = 0; i < 5; i++){
+        for(char i = 0; i < 20; i++){
   88:	80 e0       	ldi	r24, 0x00	; 0
             _delay_ms(30);  /* max is 262.14 ms / F_CPU in MHz */
         }
@@ -97,8 +97,8 @@ int main(void) {
 	while (1) {
         // set i < 5 for blinking like every third sec
         // set i < 20 for blinking like every sec
-        for(char i = 0; i < 5; i++){
-  8c:	85 30       	cpi	r24, 0x05	; 5
+        for(char i = 0; i < 20; i++){
+  8c:	84 31       	cpi	r24, 0x14	; 20
   8e:	58 f4       	brcc	.+22     	; 0xa6 <main+0x22>
 	#else
 		//round up by default
@@ -129,7 +129,7 @@ int main(void) {
 	while (1) {
         // set i < 5 for blinking like every third sec
         // set i < 20 for blinking like every sec
-        for(char i = 0; i < 5; i++){
+        for(char i = 0; i < 20; i++){
   ac:	80 e0       	ldi	r24, 0x00	; 0
             _delay_ms(30);  /* max is 262.14 ms / F_CPU in MHz */
         }

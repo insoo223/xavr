@@ -55,7 +55,7 @@
   23:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c **** 	while (1) {
   24:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         // set i < 5 for blinking like every third sec
   25:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         // set i < 20 for blinking like every sec
-  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 5; i++){
+  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 20; i++){
  143               	.LM4:
  144 0004 80E0      		ldi r24,0
  145               	.LBE5:
@@ -67,9 +67,9 @@
  148 0006 90E2      		ldi r25,lo8(32)
  149               	.L3:
  150               	.LBB8:
-  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 5; i++){
+  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 20; i++){
  152               	.LM6:
- 153 0008 8530      		cpi r24,lo8(5)
+ 153 0008 8431      		cpi r24,lo8(20)
  154 000a 00F4      		brsh .L7
  155               	.L4:
  156               	.LBB6:
@@ -251,7 +251,7 @@
  171               	.LBE7:
  172               	.LBE6:
  174               	.Ltext2:
-  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 5; i++){
+  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 20; i++){
  176               	.LM8:
  177 001e 8F5F      		subi r24,lo8(-(1))
  178 0020 00C0      		rjmp .L3
@@ -262,7 +262,7 @@
  184 0024 8927      		eor r24,r25
  185 0026 85B9      		out 0x5,r24
  186               	.LBB9:
-  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 5; i++){
+  26:/Users/insooKim/Documents/GitHub/xavr/blinkArduino/blinkArduino/main.c ****         for(char i = 0; i < 20; i++){
  188               	.LM10:
  189 0028 80E0      		ldi r24,0
  190               	.LBE9:
@@ -275,12 +275,12 @@
  208               		.ident	"GCC: (GNU) 4.8.1"
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:2      *ABS*:0000003e __SP_H__
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:3      *ABS*:0000003d __SP_L__
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:4      *ABS*:0000003f __SREG__
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:5      *ABS*:00000000 __tmp_reg__
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:6      *ABS*:00000001 __zero_reg__
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:112    .text:00000000 initIO
-/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//cceosL5l.s:130    .text.startup:00000000 main
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:2      *ABS*:0000003e __SP_H__
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:3      *ABS*:0000003d __SP_L__
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:4      *ABS*:0000003f __SREG__
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:112    .text:00000000 initIO
+/var/folders/5v/klz65mhj43l_r8sy39jn09940000gn/T//ccppCrgq.s:130    .text.startup:00000000 main
 
 NO UNDEFINED SYMBOLS
